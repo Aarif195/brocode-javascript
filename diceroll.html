@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DICE ROLLER PROGRAM</title>
+  <!-- Css Styling -->
+  <style>
+    #container {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    button {
+      font-size: 1.5rem;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: none;
+      background-color: hsl(210, 100%, 50%);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: hsl(210, 100%, 60%);
+    }
+
+    button:active {
+      background-color: hsl(210, 100%, 70%);
+    }
+
+    input {
+      font-size: 2rem;
+      width: 150px;
+      text-align: center;
+    }
+
+    #diceResult {
+      margin: 25px;
+    }
+
+    #diceImages {
+      width: 150px;
+      margin: 5px;
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <h1>Dice Roller</h1>
+    <label># of dice:</label>
+    <input id="numOfDice" type="number" value="1" min="1">
+    <button onclick="rollDice()">Roll Dice</button>
+    <div id="diceResult"></div>
+    <div id="diceImages"></div>
+  </div>
+
+
+  <script src="diceroll.js"></script>
+</body>
+
+</html>

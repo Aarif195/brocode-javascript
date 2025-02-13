@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSs Styling -->
+  <!-- TEMPERATUE CONVERSION PROGRAM -->
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: hsl(0, 0%, 95%);
+    }
+
+    h1 {
+      color: hsl(223, 100%, 54%);
+    }
+
+    form {
+      background-color: hsl(0, 0%, 100%);
+      text-align: center;
+      max-width: 350px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px hsl(0, 0%, 0%, 0.3);
+    }
+
+    #textBox {
+      width: 50%;
+      text-align: center;
+      font-size: 2rem;
+      border: 2px solid hsl(0, 0%, 0%, 0.5);
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 25px;
+      background-color: hsl(0, 100%, 60%);
+      color: white;
+      cursor: pointer;
+      border: none;
+      padding: 10px 15px;
+      font-size: 1.5em;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: hsl(0, 100%, 60%);
+
+    }
+
+    #result {
+      font-size: 1.75em;
+      font-weight: bold;
+    }
+  </style>
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form>
+    <h1>TEMPERATUE CONVERSION</h1>
+    <input type="number" id="textBox" value="0"><br>
+
+    <input type="radio" name="unit" id="toFahrenheit">
+    <label for="toFahrenheit"> celsius ➡ Fahrenheit </label> <br>
+
+    <input type="radio" name="unit" id="toCelsius">
+    <label for="toCelsius"> Fahrenheit ➡ celsius </label> <br>
+
+    <button type="button" onclick="convert()">submit</button>
+    <p id="result"></p>
+  </form>
+
+
+  <script src="temperature.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #mySubmit {
+      font-size: 1em;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <!-- .checked = property tht determines the checked state of an HTML checkbox or radio button element  -->
+
+  <input type="checkbox" id="myCheckBox">
+  <label>Subscribe</label> <br><br>
+
+  <input type="radio" id="visaBtn" name="card">
+  <label for="visaBtn">Visa</label> <br><br>
+  <input type="radio" id="masterCardBtn" name="card">
+  <label for="masterCardBtn">MasterCard</label> <br><br>
+  <input type="radio" id="payPalBtn" name="card">
+  <label for="payPalBtn">Paypal</label> <br><br>
+
+
+  <button type="submit" id="mySubmit">submit</button>
+
+
+  <p id="subResult"></p>
+  <p id="paymentResult"></p>
+
+  <script src="checked.js"></script>
+</body>
+
+</html>
